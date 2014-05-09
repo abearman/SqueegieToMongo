@@ -1,4 +1,4 @@
-package db;
+package squeegie_to_mongo;
 
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
@@ -35,7 +35,7 @@ public class DBConnection {
     /**
      * Returns a statement so that product catalog can do querying.
      */
-    public DBCollection getCollection(){
+    public DBCollection getCollection() {
         return coll;
     }
 

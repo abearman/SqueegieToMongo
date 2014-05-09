@@ -1,12 +1,10 @@
-package specific_squeegie_converters;
+package squeegie_to_mongo;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBCollection;
 import com.mongodb.DBObject;
 import com.mongodb.QueryBuilder;
 import com.mongodb.util.JSON;
-import db.DBConnection;
-import db.Sources;
 import org.apache.commons.io.IOUtils;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -36,66 +34,31 @@ public class SqueegieToMongo {
 
     public static void doSqueeging() {
         try {
+            // Gets the JSONArray of Squeegie objects
             JSONArray array = new JSONArray(IOUtils.toString(new FileInputStream("src/main/java/squeegie_output/" + _filename)));
+
+            // Iterates through each object in the JSONArray
             for (int i = 0; i < array.length(); i++) {
                 JSONObject object = array.getJSONObject(i);
+
+                // Only proceeds if the object has a title (ignores null entries)
                 if (object.has("title")) {
                     BasicDBObject query = getQuery(object);
                     BasicDBObject document = parseJSON(object);
                     BasicDBObject metadata = parseMetadata(object);
+
                     if (query != null && document != null) {
-                        if (_coll.findOne(query) != null) {
-                            DBObject found = _coll.findOne(query);
-                            _coll.update(query, new BasicDBObject("$addToSet", new BasicDBObject("metadata", metadata)));
-
-                            BasicDBObject set = new BasicDBObject();
-
-                            if (!found.containsField("latitude") && document.containsField("latitude"))
-                                set.append("$set", new BasicDBObject("latitude", document.getString("latitude")));
-                            if (!found.containsField("longitude") && document.containsField("longitude"))
-                                set.append("$set", new BasicDBObject("longitude", document.getString("longitude")));
-                            if (!found.containsField("phone") && document.containsField("phone"))
-                                set.append("$set", new BasicDBObject("phone", document.getString("phone")));
-                            if (!found.containsField("address") && document.containsField("address"))
-                                set.append("$set", new BasicDBObject("address", document.getString("address")));
-                            if (!found.containsField("website") && document.containsField("website"))
-                                set.append("$set", new BasicDBObject("website", document.getString("website")));
-
-                            if (Arrays.asList(Sources.restaurantJSONFiles).contains(_filename)) { // Sets the type of activity
-                                set.append("$set", new BasicDBObject("type", "restaurant"));
-                            } else if (Arrays.asList(Sources.otherJSONFiles).contains(_filename)) {
-                                Object type = metadata.get("type");
-                                if (type instanceof JSONArray) {
-                                    set.append("$set", new BasicDBObject("type", JSON.parse(type.toString())));
-                                } else {
-                                    set.append("$set", new BasicDBObject("type", type));
-                                }
-                            }
-                            _coll.update(query, set);
-
-                        } else {
-                            if (Arrays.asList(Sources.restaurantJSONFiles).contains(_filename)) {
-                                document.append("type", "restaurant");
-                            } else if (Arrays.asList(Sources.otherJSONFiles).contains(_filename)) {
-                                Object type = metadata.get("type");
-                                if (type instanceof JSONArray) {
-                                    document.append("type", JSON.parse(type.toString()));
-                                } else {
-                                    document.append("type", type);
-                                }
-                            }
-
-                            _coll.insert(document);
-                            _coll.update(query, new BasicDBObject("$addToSet", new BasicDBObject("metadata", metadata)));
+                        if (_coll.findOne(query) != null) { // There is already an entry that matches this query
+                            updateExistingDocument(query, document, metadata);
+                        } else { // Insert a brand, spanking new document
+                            insertNewDocument(query, document, metadata);
                         }
-
                         System.out.println("One updated: " + object.getString("title"));
                     } else {
                         System.out.println("Something went wrong with either the query or the document, or both");
                     }
                 }
             }
-
         } catch (JSONException e) {
             e.printStackTrace();
         } catch (FileNotFoundException e) {
@@ -103,7 +66,54 @@ public class SqueegieToMongo {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println("All done!");
+    }
+
+    public static void updateExistingDocument(BasicDBObject query, BasicDBObject document, BasicDBObject metadata) {
+        // Retrieves the existing document from the database
+        DBObject found = _coll.findOne(query);
+
+        // Updates the existing document by adding the new set of metadata
+        _coll.update(query, new BasicDBObject("$addToSet", new BasicDBObject("metadata", metadata)));
+
+        // Updates the existing document to fill in any missing basic info (which goes outside metadata)
+        _coll.update(query, constructSetObject(found, document, metadata));
+    }
+
+    public static void insertNewDocument(BasicDBObject query, BasicDBObject document, BasicDBObject metadata) {
+        document.append("type", getTypeOfActivity(metadata));
+        _coll.insert(document);
+        _coll.update(query, new BasicDBObject("$addToSet", new BasicDBObject("metadata", metadata)));
+    }
+
+    public static Object getTypeOfActivity(BasicDBObject metadata) {
+        if (Arrays.asList(Sources.restaurantJSONFiles).contains(_filename)) {
+            return "restaurant";
+        } else if (Arrays.asList(Sources.otherJSONFiles).contains(_filename)) {
+            Object type = metadata.get("type");
+            if (type instanceof JSONArray) {
+                return JSON.parse(type.toString());
+            } else {
+                return type;
+            }
+        }
+        return "";
+    }
+
+    public static BasicDBObject constructSetObject(DBObject found, BasicDBObject document, BasicDBObject metadata) {
+        BasicDBObject set = new BasicDBObject();
+        if (!found.containsField("latitude") && document.containsField("latitude"))
+            set.append("$set", new BasicDBObject("latitude", document.getString("latitude")));
+        if (!found.containsField("longitude") && document.containsField("longitude"))
+            set.append("$set", new BasicDBObject("longitude", document.getString("longitude")));
+        if (!found.containsField("phone") && document.containsField("phone"))
+            set.append("$set", new BasicDBObject("phone", document.getString("phone")));
+        if (!found.containsField("address") && document.containsField("address"))
+            set.append("$set", new BasicDBObject("address", document.getString("address")));
+        if (!found.containsField("website") && document.containsField("website"))
+            set.append("$set", new BasicDBObject("website", document.getString("website")));
+
+        set.append("$set", new BasicDBObject("type", getTypeOfActivity(metadata)));
+        return set;
     }
 
     public static BasicDBObject getQuery(JSONObject object) {

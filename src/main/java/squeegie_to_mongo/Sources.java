@@ -1,4 +1,4 @@
-package db;
+package squeegie_to_mongo;
 
 /**
  * Created by AmyBear on 5/8/14.

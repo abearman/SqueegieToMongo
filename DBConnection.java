@@ -1,11 +1,11 @@
-package db;
+package squeegie_to_mongo;
 
 import com.mongodb.*;
 
 import java.net.UnknownHostException;
 
 /**
- * db.DBConnection class handles creating and closing the connection.
+ * squeegie_to_mongo.DBConnection class handles creating and closing the connection.
  */
 public class DBConnection {
 

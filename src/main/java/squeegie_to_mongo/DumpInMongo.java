@@ -1,6 +1,4 @@
-package db;
-
-import specific_squeegie_converters.SqueegieToMongo;
+package squeegie_to_mongo;
 
 /**
  * Created by AmyBear on 5/8/14.
