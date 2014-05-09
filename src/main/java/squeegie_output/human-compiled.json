@@ -1,0 +1,56 @@
+{"objects": [
+    {
+        "title": "Sea Lions at Pier 39",
+        "address": "Beach Street & the Embarcadero, San Francisco, CA 94133",
+        "description": "Head down to Fisherman's Wharf to check out the sea lions lounging around.",
+        "image-url": "http://farm3.static.flickr.com/2666/3942554233_11e2456794.jpg"
+    },
+    {
+        "title": "Coit Tower",
+        "address": "1 Telegraph Hill Boulevard, San Francisco, CA 94133",
+        "description": "Great views of San Fransisco, and beautiful murals inside the tower",
+        "cost": 7,
+        "telephone": "415-362-0808",
+        "image-url": "http://img.timeinc.net/time/photoessays/2008/san_francisco/sf_coit_tower.jpg"
+    },
+    {
+        "title": "Amoeba Music",
+        "address": "1855 Haight Street, San Francisco, CA 94117",
+        "description": "One of the biggest collections of CDs in the world",
+        "cost": 0,
+        "image-url": "http://herot.typepad.com/photos/amoeba_music/amoeba1.jpg"
+    },
+    {
+        "title": "Golden Gate Park",
+        "address": "Golden Gate Park, San Francisco, CA 94122",
+        "description": "With over a million trees, this beats Central Park.",
+        "cost": 0,
+        "image-url": "http://extras.sfgate.com/img/travel/goldengatepark.jpg"
+    },
+    {
+        "title": "Conservatory of Flowers",
+        "address": "Conservatory of Flowers, San Francisco, CA 94122",
+        "description": "The oldest Victorian greenhouse on this continent",
+        "cost": 0,
+        "image-url": "http://img.timeinc.net/time/photoessays/2008/san_francisco/sf_golden_gate.jpg"
+    },
+    {
+        "title": "Golden Gate Park Carousel",
+        "address": "320 Bowling Green Drive, San Francisco, CA 94122",
+        "description": "A sweet little carousel",
+        "cost": 2,
+        "hours": "10:00am - 4:30pm",
+        "telephone": "415-831-2700",
+        "image-url": "http://upload.wikimedia.org/wikipedia/commons/f/f8/Golden_Gate_Park_carousel_01.jpg"
+    },
+    {
+        "title": "The Exploratorium",
+        "address": "Pier 15, San Francisco, CA 94111",
+        "description": "San Fransisco's legendary science museum",
+        "cost": 15,
+        "hours": "10:00am - 5:00pm",
+        "telephone": "415-528-4444",
+        "image-url": "http://www.exploratorium.edu/sites/default/files/visit/banners/wide_eve_water.jpg"
+    }
+]
+}

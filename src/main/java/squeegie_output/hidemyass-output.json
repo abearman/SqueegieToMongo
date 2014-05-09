@@ -1,0 +1,548 @@
+{"proxies": [
+    {
+        "connection_time": 292,
+        "port": "80",
+        "response_time": 2688,
+        "ip": "210.169.168.66"
+    },
+    {
+        "connection_time": 371,
+        "port": "82",
+        "response_time": 2639,
+        "ip": "218.108.170.170"
+    },
+    {
+        "connection_time": 389,
+        "port": "80",
+        "response_time": 4562,
+        "ip": "218.108.232.93"
+    },
+    {
+        "connection_time": 458,
+        "port": "80",
+        "response_time": 2796,
+        "ip": "218.108.170.162"
+    },
+    {
+        "connection_time": 442,
+        "port": "80",
+        "response_time": 10692,
+        "ip": "61.91.45.54"
+    },
+    {
+        "connection_time": 3300,
+        "port": "81",
+        "response_time": 6277,
+        "ip": "121.14.138.56"
+    },
+    {
+        "connection_time": 403,
+        "port": "3128",
+        "response_time": 4195,
+        "ip": "218.104.148.59"
+    },
+    {
+        "connection_time": 111,
+        "port": "8080",
+        "response_time": 2146,
+        "ip": "213.55.100.194"
+    },
+    {
+        "connection_time": 445,
+        "port": "80",
+        "response_time": 2052,
+        "ip": "218.108.168.68"
+    },
+    {
+        "connection_time": 652,
+        "port": "82",
+        "response_time": 7447,
+        "ip": "42.121.59.142"
+    },
+    {
+        "connection_time": 3130,
+        "port": "3128",
+        "response_time": 9402,
+        "ip": "204.10.111.177"
+    },
+    {
+        "connection_time": 315,
+        "port": "8080",
+        "response_time": 6766,
+        "ip": "122.154.97.126"
+    },
+    {
+        "connection_time": 62,
+        "port": "8080",
+        "response_time": 5656,
+        "ip": "46.60.48.161"
+    },
+    {
+        "connection_time": 294,
+        "port": "80",
+        "response_time": 8369,
+        "ip": "115.238.243.202"
+    },
+    {
+        "connection_time": 355,
+        "port": "80",
+        "response_time": 1932,
+        "ip": "218.108.170.166"
+    },
+    {
+        "connection_time": 414,
+        "port": "81",
+        "response_time": 2085,
+        "ip": "122.96.59.106"
+    },
+    {
+        "connection_time": 267,
+        "port": "81",
+        "response_time": 815,
+        "ip": "112.5.183.235"
+    },
+    {
+        "connection_time": 367,
+        "port": "82",
+        "response_time": 2993,
+        "ip": "218.108.170.164"
+    },
+    {
+        "connection_time": 251,
+        "port": "80",
+        "response_time": 7143,
+        "ip": "120.210.194.16"
+    },
+    {
+        "connection_time": 368,
+        "port": "83",
+        "response_time": 2715,
+        "ip": "122.96.59.106"
+    },
+    {
+        "connection_time": 369,
+        "port": "8000",
+        "response_time": 1264,
+        "ip": "61.50.245.163"
+    },
+    {
+        "connection_time": 3257,
+        "port": "80",
+        "response_time": 8810,
+        "ip": "120.210.194.9"
+    },
+    {
+        "connection_time": 250,
+        "port": "80",
+        "response_time": 6578,
+        "ip": "120.210.194.12"
+    },
+    {
+        "connection_time": 273,
+        "port": "80",
+        "response_time": 6117,
+        "ip": "120.198.230.11"
+    },
+    {
+        "connection_time": 297,
+        "port": "80",
+        "response_time": 5745,
+        "ip": "85.185.149.16"
+    },
+    {
+        "connection_time": 455,
+        "port": "80",
+        "response_time": 1384,
+        "ip": "218.108.170.165"
+    },
+    {
+        "connection_time": 320,
+        "port": "84",
+        "response_time": 3989,
+        "ip": "114.104.203.14"
+    },
+    {
+        "connection_time": 3116,
+        "port": "80",
+        "response_time": 8648,
+        "ip": "216.153.195.195"
+    },
+    {
+        "connection_time": 409,
+        "port": "82",
+        "response_time": 1819,
+        "ip": "218.108.170.173"
+    },
+    {
+        "connection_time": 364,
+        "port": "8088",
+        "response_time": 9623,
+        "ip": "180.153.32.93"
+    },
+    {
+        "connection_time": 265,
+        "port": "8080",
+        "response_time": 6989,
+        "ip": "190.38.114.41"
+    },
+    {
+        "connection_time": 3622,
+        "port": "81",
+        "response_time": 4354,
+        "ip": "213.42.30.93"
+    },
+    {
+        "connection_time": 260,
+        "port": "82",
+        "response_time": 1181,
+        "ip": "112.5.183.235"
+    },
+    {
+        "connection_time": 29,
+        "port": "8080",
+        "response_time": 6022,
+        "ip": "176.61.136.2"
+    },
+    {
+        "connection_time": 316,
+        "port": "8080",
+        "response_time": 8772,
+        "ip": "201.248.18.225"
+    },
+    {
+        "connection_time": 281,
+        "port": "808",
+        "response_time": 1526,
+        "ip": "58.210.206.239"
+    },
+    {
+        "connection_time": 3308,
+        "port": "80",
+        "response_time": 1500,
+        "ip": "203.189.148.71"
+    },
+    {
+        "connection_time": 276,
+        "port": "8080",
+        "response_time": 8853,
+        "ip": "190.73.250.34"
+    },
+    {
+        "connection_time": 388,
+        "port": "8080",
+        "response_time": 7689,
+        "ip": "190.75.87.84"
+    },
+    {
+        "connection_time": 336,
+        "port": "843",
+        "response_time": 1034,
+        "ip": "122.96.59.106"
+    },
+    {
+        "connection_time": 290,
+        "port": "80",
+        "response_time": 3803,
+        "ip": "189.39.123.4"
+    },
+    {
+        "connection_time": 3340,
+        "port": "83",
+        "response_time": 1396,
+        "ip": "122.96.59.102"
+    },
+    {
+        "connection_time": 66,
+        "port": "8118",
+        "response_time": 8085,
+        "ip": "31.28.6.13"
+    },
+    {
+        "connection_time": 366,
+        "port": "3128",
+        "response_time": 10004,
+        "ip": "218.64.255.253"
+    },
+    {
+        "connection_time": 310,
+        "port": "8080",
+        "response_time": 7411,
+        "ip": "140.206.86.68"
+    },
+    {
+        "connection_time": 348,
+        "port": "80",
+        "response_time": 1069,
+        "ip": "218.108.170.171"
+    },
+    {
+        "connection_time": 284,
+        "port": "80",
+        "response_time": 1102,
+        "ip": "117.59.217.236"
+    },
+    {
+        "connection_time": 352,
+        "port": "82",
+        "response_time": 2142,
+        "ip": "218.108.170.171"
+    },
+    {
+        "connection_time": 458,
+        "port": "3128",
+        "response_time": 3382,
+        "ip": "58.20.127.178"
+    },
+    {
+        "connection_time": 3010,
+        "port": "80",
+        "response_time": 4715,
+        "ip": "31.11.3.50"
+    },
+    {
+        "connection_time": 3368,
+        "port": "3128",
+        "response_time": 3798,
+        "ip": "121.52.229.51"
+    },
+    {
+        "connection_time": 261,
+        "port": "80",
+        "response_time": 1155,
+        "ip": "112.5.183.235"
+    },
+    {
+        "connection_time": 277,
+        "port": "8080",
+        "response_time": 6414,
+        "ip": "116.236.216.116"
+    },
+    {
+        "connection_time": 234,
+        "port": "8080",
+        "response_time": 9374,
+        "ip": "190.38.73.202"
+    },
+    {
+        "connection_time": 409,
+        "port": "8080",
+        "response_time": 8020,
+        "ip": "200.90.86.128"
+    },
+    {
+        "connection_time": 443,
+        "port": "3128",
+        "response_time": 1904,
+        "ip": "58.20.223.230"
+    },
+    {
+        "connection_time": 334,
+        "port": "80",
+        "response_time": 1069,
+        "ip": "118.26.57.14"
+    },
+    {
+        "connection_time": 164,
+        "port": "8080",
+        "response_time": 6829,
+        "ip": "200.75.51.151"
+    },
+    {
+        "connection_time": 394,
+        "port": "82",
+        "response_time": 1759,
+        "ip": "218.108.170.162"
+    },
+    {
+        "connection_time": 206,
+        "port": "8080",
+        "response_time": 6971,
+        "ip": "190.201.102.213"
+    },
+    {
+        "connection_time": 263,
+        "port": "8123",
+        "response_time": 7444,
+        "ip": "218.204.65.193"
+    },
+    {
+        "connection_time": 127,
+        "port": "80",
+        "response_time": 2606,
+        "ip": "207.244.65.34"
+    },
+    {
+        "connection_time": 478,
+        "port": "8080",
+        "response_time": 8388,
+        "ip": "190.77.213.188"
+    },
+    {
+        "connection_time": 434,
+        "port": "3128",
+        "response_time": 3267,
+        "ip": "58.20.127.100"
+    },
+    {
+        "connection_time": 3366,
+        "port": "18186",
+        "response_time": 2912,
+        "ip": "59.78.22.52"
+    },
+    {
+        "connection_time": 267,
+        "port": "8080",
+        "response_time": 8723,
+        "ip": "78.38.114.221"
+    },
+    {
+        "connection_time": 386,
+        "port": "80",
+        "response_time": 7201,
+        "ip": "61.155.136.187"
+    },
+    {
+        "connection_time": 346,
+        "port": "8080",
+        "response_time": 7392,
+        "ip": "200.84.35.117"
+    },
+    {
+        "connection_time": 17,
+        "port": "81",
+        "response_time": 4081,
+        "ip": "93.184.16.39"
+    },
+    {
+        "connection_time": 3360,
+        "port": "80",
+        "response_time": 3228,
+        "ip": "180.150.157.209"
+    },
+    {
+        "connection_time": 442,
+        "port": "82",
+        "response_time": 3260,
+        "ip": "218.108.232.93"
+    },
+    {
+        "connection_time": 164,
+        "port": "3129",
+        "response_time": 4115,
+        "ip": "91.213.87.3"
+    },
+    {
+        "connection_time": 376,
+        "port": "82",
+        "response_time": 2623,
+        "ip": "58.22.0.54"
+    },
+    {
+        "connection_time": 408,
+        "port": "83",
+        "response_time": 1182,
+        "ip": "114.104.203.14"
+    },
+    {
+        "connection_time": 185,
+        "port": "8080",
+        "response_time": 5711,
+        "ip": "200.75.51.148"
+    },
+    {
+        "connection_time": 306,
+        "port": "3128",
+        "response_time": 6923,
+        "ip": "117.40.156.145"
+    },
+    {
+        "connection_time": 365,
+        "port": "80",
+        "response_time": 6106,
+        "ip": "85.185.149.31"
+    },
+    {
+        "connection_time": 355,
+        "port": "80",
+        "response_time": 1126,
+        "ip": "122.96.59.106"
+    },
+    {
+        "connection_time": 153,
+        "port": "80",
+        "response_time": 1168,
+        "ip": "94.201.134.251"
+    },
+    {
+        "connection_time": 323,
+        "port": "18186",
+        "response_time": 987,
+        "ip": "222.20.61.168"
+    },
+    {
+        "connection_time": 340,
+        "port": "80",
+        "response_time": 1595,
+        "ip": "218.108.168.67"
+    },
+    {
+        "connection_time": 378,
+        "port": "8088",
+        "response_time": 8325,
+        "ip": "122.244.22.110"
+    },
+    {
+        "connection_time": 398,
+        "port": "80",
+        "response_time": 1659,
+        "ip": "218.108.170.170"
+    },
+    {
+        "connection_time": 183,
+        "port": "6515",
+        "response_time": 2143,
+        "ip": "122.252.248.147"
+    },
+    {
+        "connection_time": 398,
+        "port": "80",
+        "response_time": 1543,
+        "ip": "218.108.170.163"
+    },
+    {
+        "connection_time": 474,
+        "port": "8080",
+        "response_time": 8345,
+        "ip": "190.204.22.247"
+    },
+    {
+        "connection_time": 251,
+        "port": "21000",
+        "response_time": 1218,
+        "ip": "123.176.80.17"
+    },
+    {
+        "connection_time": 63,
+        "port": "8118",
+        "response_time": 6824,
+        "ip": "31.28.23.219"
+    },
+    {
+        "connection_time": 309,
+        "port": "80",
+        "response_time": 7644,
+        "ip": "183.141.65.133"
+    },
+    {
+        "connection_time": 3479,
+        "port": "8080",
+        "response_time": 6620,
+        "ip": "183.60.46.72"
+    },
+    {
+        "connection_time": 310,
+        "port": "8080",
+        "response_time": 6371,
+        "ip": "112.4.17.152"
+    }
+]}
